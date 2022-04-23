@@ -1,3 +1,6 @@
+"""
+https://flask.palletsprojects.com/en/2.1.x/tutorial/database/
+"""
 import sqlite3
 
 import click
@@ -15,6 +18,7 @@ def get_db():
         g.db = sqlite3.connect(
             current_app.config["DATABASE"], detect_types=sqlite3.PARSE_DECLTYPES
         )
+        # return rows as dicts instead of tuples
         g.db.row_factory = sqlite3.Row
 
     return g.db
