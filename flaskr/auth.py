@@ -1,3 +1,6 @@
+"""
+https://flask.palletsprojects.com/en/2.1.x/tutorial/views/
+"""
 import functools
 
 from flask import Blueprint

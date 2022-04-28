@@ -1,3 +1,7 @@
+"""
+pytest conftest document:
+https://docs.pytest.org/en/latest/explanation/fixtures.html#conftest-py-sharing-fixtures-across-multiple-files
+"""
 import os
 import tempfile
 
